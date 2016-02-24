@@ -291,7 +291,7 @@ function horsey (el, options) {
         show();
       }
     } else if (shown) {
-      if (which === KEY_ENTER) {
+      if (which === KEY_ENTER || which === KEY_TAB) {
         if (selection) {
           crossvent.fabricate(selection, 'click');
         } else {
